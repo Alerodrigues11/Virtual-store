@@ -158,3 +158,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* DETALHE-PRODUTO*/
+.product__details--general {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
