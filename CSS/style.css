@@ -1,5 +1,5 @@
 body {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,1))) fixed;
+    
 }
 
 /* Home Page - Styles */
@@ -7,13 +7,13 @@ body {
 .register {
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
-    padding: 5px 12.5px;
+
+    background-color: darkgrey;
 }
 
 .register a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 600;
     padding: 6px;
     font-size: 1.15rem;
@@ -25,10 +25,29 @@ body {
 }
 
 
+/* Navbar */
+
+.container__navbar {
+    max-width: 100%;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar-nav a {
+    font-weight: 600;
+    font-size: 20px;       
+    margin: 0 15px;
+    color: #E0EEEE;
+}
+
 /* Slider */
 
 .main-products {
     position: relative;
+    margin: 20px 0;
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
@@ -36,8 +55,24 @@ body {
 }
 
 #mainSlider .carousel-caption {
-    top: 30%;
+    top: 10%;
     left: 60%;
+}
+
+.container-products {
+    max-width: 100%;
+    width: 80vw;
+    padding: 0;
+
+    box-shadow: 12px 10px 31px -4px rgba(0,0,0,0.75);
+}
+
+/* Product Description */
+
+.carousel-caption h2 {
+    color: black;
+    font-family: 'Yeseva One', cursive;
+
 }
 
 /* Products */
@@ -46,7 +81,7 @@ body {
     position: relative;
     padding: 5px;
     max-width: 90vw;
-    margin: 0 auto;
+    margin: 12px auto;
 }
 
 .gallery-wrapper {
@@ -99,8 +134,39 @@ body {
 
 /* Quem Somos */
 
-.container-about p {
-    color: #fff;
+.container-about {
+    margin-top:3rem;
+}
+
+.quem__somos {
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.description__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px 4px rgba(50, 48, 48, 0.9);
+
+    margin: 2.5rem 2.5rem;
+    padding: 2rem 0;
+}
+
+.description__card:hover {
+    box-shadow: 0px 0px 10px 10px rgba(50, 48, 48, 0.9);
+    transition: all 0.2s 0s ease-in-out;
+}
+
+.description__card--specific {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Produtos */
@@ -153,6 +219,21 @@ body {
 /* PRODUCTS */
 
 .container__products--all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DETALHE-PRODUTO*/
+.product__details--general {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__details {
     display: flex;
     flex-direction: column;
     justify-content: center;
