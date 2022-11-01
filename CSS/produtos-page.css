@@ -1,0 +1,67 @@
+/***************** PRODUTOS *****************/
+
+#divSearch {
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:450px;
+    height:32px;
+}
+  
+#txtSearch {
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:27px;
+    width:191px;
+}
+    
+#divSearch img{
+    float:left;
+    height: 27px;
+    width: 27px;
+}
+
+.search__area {
+    margin-top: 1.5%;
+}
+
+.products__search {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+.category {
+    height: 32px;
+    margin-left: 5%;
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    border-radius: 7px;
+    font-weight: 600;
+    padding: 0 5%;
+    box-shadow: 5px 10px;
+}
+
+.container__products--all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__details--general {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

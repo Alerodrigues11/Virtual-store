@@ -11,8 +11,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
     
-        <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../CSS/produtos-page.css">
+        <link rel="stylesheet" href="../CSS/produtos-homepage.css">
+        <link rel="stylesheet" href="../CSS/homepage-carousel-quemsomos.css">
+        <link rel="stylesheet" href="../CSS/header.css">
+        <link rel="stylesheet" href="../CSS/footer.css">
+        <link rel="stylesheet" href="../CSS/contato.css">
         
     </head>
     
@@ -52,7 +57,7 @@
             
         </main>
 
-        <script src="/bootstrap/bootstrap.min.js"></script>
+        <script src="../bootstrap/bootstrap.min.js"></script>
     </body>
     
     </html>

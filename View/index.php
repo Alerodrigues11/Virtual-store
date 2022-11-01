@@ -15,9 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/CSS/style.css">
-    
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/produtos-page.css">
+    <link rel="stylesheet" href="../CSS/produtos-homepage.css">
+    <link rel="stylesheet" href="../CSS/homepage-carousel-quemsomos.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/contato.css">
     
 </head>
 
@@ -33,13 +37,13 @@
                 </div>
 
                 <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="/View/index.html">Home</a>
-                    <a class="nav-link" href="/View/produtos.html" target="_blank">Produtos</a>
-                    <a class="nav-link" href="/View/contato.html">Contato e Localização</a>
-                    <a class="nav-link" href="/View/contato.html">Sugestões</a>
+                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link" href="produtos.php" target="_blank">Produtos</a>
+                    <a class="nav-link" href="contato.php">Contato e Localização</a>
+                    <a class="nav-link" href="contato.php">Sugestões</a>
                 </div>
 
-                <div class="general__home-page">
+                <div class="register__home-page">
                     <div class="register">
                         <a href="#">Login</a>
                         <a href="#">Sign up</a>
@@ -49,8 +53,8 @@
 
     </nav>
 
-    <main class="main-products">
-        <div class="container container-products">
+    <main>
+        <div class="container container-carousel">
             <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></li>
@@ -61,35 +65,35 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/img/produto1.jpg" class="d-block w-100" alt="#">
+                        <img src="../img/produto1.jpg" class="d-block w-100" alt="#">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Headset Gamer</h2>
                             <p></p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/produto2.jpg" class="d-block w-100" alt="#">
+                        <img src="../img/produto2.jpg" class="d-block w-100" alt="#">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Computador Gamer</h2>
                             <p></p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/produto3.jpg" class="d-block w-100" alt="#">
+                        <img src="../img/produto3.jpg" class="d-block w-100" alt="#">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Kit Gamer</h2>
                             <p></p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/produto4.jpg" class="d-block w-100" alt="#">
+                        <img src="../img/produto4.jpg" class="d-block w-100" alt="#">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Mousepad Extra Large</h2>
                             <p></p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/img/produto1.jpg" class="d-block w-100" alt="#">
+                        <img src="../img/produto1.jpg" class="d-block w-100" alt="#">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Monitor 24' 144hz</h2>
                             <p></p>
@@ -109,33 +113,33 @@
             </div>
         </div>
 
-        <div class="product-list">
+        <div class="carousel__product--list">
             <button class="arrow-left control" arial-label="Previous image">&#11164</button>
             <button class="arrow-right control" arial-label="Next image">&#11166</button>
             <div class="gallery-wrapper">
                 <div class="gallery">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
-                    <img src="/img/250x250.png" alt="#" class="product current-product">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
+                    <img src="../img/250x250.png" alt="#" class="product--carousel current__product--carousel">
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="container container-about">
-            <h1 class="quem__somos">Quem Somos</h1>
+    <section class="container container__about">
+            <h1 class="container__about--title">Quem Somos</h1>
             <div class="row justify-content-center">
                 <div class="col-3 description__card">
                     <div class="description__card--specific">
@@ -164,7 +168,7 @@
         
     </footer>
     
-    <script src="/bootstrap/bootstrap.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>
