@@ -13,7 +13,6 @@
     
         <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="../CSS/produtos-page.css">
-        <link rel="stylesheet" href="../CSS/produtos-homepage.css">
         <link rel="stylesheet" href="../CSS/homepage-carousel-quemsomos.css">
         <link rel="stylesheet" href="../CSS/header.css">
         <link rel="stylesheet" href="../CSS/footer.css">
@@ -53,31 +52,32 @@
                     <img src="../img/lupa.png" alt="Search..."/>
                     <input type="text" id="txtSearch" placeholder="Search..."/>
                 </div>
-            
-            <p class="category">CATEGORIAS</p>
             </div>
 
-            <div class="main">
-                <section class="main__filtro">
-                    <button class="filtro">Tudo</button>
-                    <button class="filtro">Celular</button>
-                    <button class="filtro">Camera</button>
-                    <button class="filtro">Relógio</button>
-                    <button class="filtro">Óculos</button>
+            <div class="container row justify-content-center produtos__page--config">
+                <section class="col-2">
+                    <div class="filter__section">
+                        <button class="filter__category">Tudo</button>
+                        <button class="filter__category">Celular</button>
+                        <button class="filter__category">Camera</button>
+                        <button class="filter__category">Relógio</button>
+                        <button class="filter__category">Óculos</button>
+                    </div>
                 </section>
                 
-                <section class="main__produtos row justify-content-center">
-                    <?php for($i = 0; $i <= 3; $i++) { ?>
-                        <div class="col-2 container__products--all"><img class="produto" src="../img/oculos1.jpg" alt="#"></div>
-                        <div class="col-2 container__products--all"><img class="produto" src="../img/oculos1.jpg" alt="#"></div>
-                        <div class="col-2 container__products--all"><img class="produto" src="../img/relogio1.jpg" alt="#"></div>
-                        <div class="col-2 container__products--all"><img class="produto" src="../img/relogio2.jpg" alt="#"></div>
-                    <?php } ?>
-
+                <section class="row justify-content-center col-10">
+                    <div class="main__produtos--page">
+                        <?php for($i = 0; $i <= 3; $i++) { ?>
+                            <div class="col-2 container__products--all"><img class="product__selection" src="../img/oculos1.jpg" alt="#"></div>
+                            <div class="col-2 container__products--all"><img class="product__selection" src="../img/oculos1.jpg" alt="#"></div>
+                            <div class="col-2 container__products--all"><img class="product__selection" src="../img/oculos1.jpg" alt="#"></div>
+                            <div class="col-2 container__products--all"><img class="product__selection" src="../img/relogio1.jpg" alt="#"></div>
+                        <?php } ?>
+                    </div>
                 </section>
             </div>
 
-        <script src="/bootstrap/bootstrap.min.js"></script>
+        <script src="../bootstrap/bootstrap.min.js"></script>
     </body>
     
     </html>

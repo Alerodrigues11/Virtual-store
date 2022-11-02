@@ -17,7 +17,6 @@
 
     <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/produtos-page.css">
-    <link rel="stylesheet" href="../CSS/produtos-homepage.css">
     <link rel="stylesheet" href="../CSS/homepage-carousel-quemsomos.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
