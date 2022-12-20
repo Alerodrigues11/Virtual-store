@@ -1,0 +1,31 @@
+/***** forms *****/
+
+.forms__contact {
+    max-width: 450px;
+}
+
+.forms__contact label {
+    font-weight: 600;
+    font-family: 'Inter';
+
+}
+
+.contact__button {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+
+.contact__button--details {
+    border: 2px solid transparent;
+    border-radius: 100px 100px 100px 100px;
+    padding: 10px 55px;
+
+    font-weight: 600;
+    font-family: 'Inter';
+}
+
+.mapa-conteudo {
+    width: 350px;
+}

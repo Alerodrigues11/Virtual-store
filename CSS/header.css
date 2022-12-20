@@ -38,27 +38,3 @@
     margin: 0 15px;
     color: #E0EEEE;
 }
-
-/* Slider */
-
-.main-products {
-    position: relative;
-    margin: 20px 0;
-}
-
-#mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: 70vh;
-}
-
-#mainSlider .carousel-caption {
-    top: 10%;
-    left: 60%;
-}
-
-.container-products {
-    max-width: 100%;
-    width: 80vw;
-    padding: 0;
-
-    box-shadow: 12px 10px 31px -4px rgba(0,0,0,0.75);
-}
