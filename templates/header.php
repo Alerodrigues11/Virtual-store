@@ -47,7 +47,7 @@
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="<?=$BASE_URL?>index.php">Home</a>
                     <a class="nav-link" href="" target="_blank">Produtos</a>
-                    <a class="nav-link" href="<?=$BASE_URL?>pages/form_contato.php">Contato e Localização</a>
+                    <a class="nav-link" href="<?=$BASE_URL?>form_contato.php">Contato e Localização</a>
                     <a class="nav-link" href="">Sugestões</a>
                 </div>
 
