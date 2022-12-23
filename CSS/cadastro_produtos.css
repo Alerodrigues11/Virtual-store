@@ -1,9 +1,9 @@
-.main__title--clients {
+.main__title--products {
     text-align: center;
     margin-top: 2rem;
 }
 
-.form_clients {
+.form_products {
     max-width: 500px;
     margin: 2rem auto;
 }

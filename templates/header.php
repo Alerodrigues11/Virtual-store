@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/footer.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/contato.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro_clientes.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro_produtos.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/login_page.css">
     
 </head>
@@ -48,7 +49,7 @@
                     <a class="nav-link" aria-current="page" href="<?=$BASE_URL?>index.php">Home</a>
                     <a class="nav-link" href="" target="_blank">Produtos</a>
                     <a class="nav-link" href="<?=$BASE_URL?>form_contato.php">Contato e Localização</a>
-                    <a class="nav-link" href="">Sugestões</a>
+                    <a class="nav-link" href="<?=$BASE_URL?>cadastro_produtos.php"">Cadastro de Produtos</a>
                 </div>
 
                 <div class="register__home-page">

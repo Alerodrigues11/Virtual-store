@@ -25,7 +25,7 @@
                 <label for="pass">Senha:</label>
                 <input type="password" class="form-control" id="pass" name="pass" placeholder="Digite a sua senha" required>
             </div>
-                <button type="submit" class="btn btn-primary" id="register">Cadastrar</button>
+                <button type="submit" class="w-100 btn btn-primary">Cadastrar</button>
         </form>
     </div>
 <?php
