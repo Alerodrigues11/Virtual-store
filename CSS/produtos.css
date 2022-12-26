@@ -1,0 +1,51 @@
+.container {
+    max-width: 100%;    
+}
+
+.product-title {
+    text-align: center;
+    font-family: 'Inter';
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.individual-products {
+    width: 300px;
+    height: 450px;
+    margin: 0 20px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid #b9b8b8;
+}
+
+.img-products {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.img-products img {
+    width: 100%;
+    height: 100%;
+}
+
+.individual-products h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter';
+}
+
+.individual-products p {
+    font-size: 16px;
+    font-family: 'Inter';
+    color: #808080;
+}

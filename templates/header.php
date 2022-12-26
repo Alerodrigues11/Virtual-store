@@ -1,6 +1,14 @@
 <?php
 
     include_once("helpers/url.php");
+    include_once("helpers/process_db_cadastro_clientes.php");
+    include_once("helpers/process_db_cadastro_produtos.php");
+
+    // limpar a mensagem
+    if(isset($_SESSION["msg"])) {
+        $printMsg = $_SESSION["msg"];
+        $_SESSION["msg"] = '';
+    }
 
 ?>
 
@@ -24,6 +32,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="<?=$BASE_URL?>bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/body.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/quem_somos.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/header.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/footer.css">
@@ -31,6 +40,7 @@
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro_clientes.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro_produtos.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/login_page.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/produtos.css">
     
 </head>
 
@@ -47,7 +57,7 @@
 
                 <div class="navbar-nav">
                     <a class="nav-link" aria-current="page" href="<?=$BASE_URL?>index.php">Home</a>
-                    <a class="nav-link" href="" target="_blank">Produtos</a>
+                    <a class="nav-link" href="<?=$BASE_URL?>produtos.php">Produtos</a>
                     <a class="nav-link" href="<?=$BASE_URL?>form_contato.php">Contato e Localização</a>
                     <a class="nav-link" href="<?=$BASE_URL?>cadastro_produtos.php"">Cadastro de Produtos</a>
                 </div>

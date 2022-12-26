@@ -1,13 +1,19 @@
 <?php
+
+    session_start();
+
     include_once("url.php");
     include_once("conn_banco_de_dados.php");
     //$_FILE["imagemproduto"]
 
     $data = $_POST;
-    $img = $_FILES["imagemproduto"];
 
-    if(!empty($data) && !empty($img)) 
+    if(!empty($data) && !empty($_FILES) && $data["type"] === "create") 
     {
+
+        // first CRUD step - CREATE
+        $img = $_FILES["imagemproduto"];
+
         $nomeProduto = $data["nomeproduto"];
         $precoProduto = $data["precoproduto"];
         $estoque = $data["estoque"];
@@ -47,5 +53,38 @@
             $error = $e->getMessage();
             echo "Erro: $error";
         }
+
+        header("Location: ". $BASE_URL . "../index.php");
+    } else 
+    
+    {
+        $id;
+    
+        if(!empty($_GET)) 
+        {
+          $id = $_GET["id"];
+        }
+
+    // Retorna dado de um post específico
+    if(!empty($id)) 
+    {
+        $query = "SELECT * FROM produtos WHERE id = :id";
+
+        $stmt = $conn_clients->prepare($query);
+
+        $stmt->binParam(":id", $id).
+
+        $stmt->execute();
+
+        $produtos = $stmt->fetch();
+    } else {
+        $query = "SELECT * FROM produtos";
+
+        $stmt = $conn_clients->prepare($query);
+
+        $stmt->execute();
+
+        $produtos = $stmt->fetchAll();
     }
 
+}

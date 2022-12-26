@@ -1,6 +1,9 @@
 <?php
     include_once("templates/header.php");
 ?>
+    <?php if(isset($printMsg) && $printMsg != ''): ?>
+        <p class="msg"><?= $printMsg ?></p>
+    <?php endif; ?>
     <section class="container container__about">
         <h1 class="container__about--title">Quem Somos</h1>
         <div class="row justify-content-center">

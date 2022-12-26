@@ -9,11 +9,11 @@
 
         $conn_clients = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
 
-        // Ativar o modo de erros
+        // Error mode on
         $conn_clients->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     } catch(PDOException $e) {
-        // erro na conexão
+        // Connection error
         $error = $e->getMessage();
         echo "Erro: $error";
     }

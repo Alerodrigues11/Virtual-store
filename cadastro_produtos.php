@@ -5,6 +5,7 @@
     <div class="container">
         <h2 class="main__title--products">Cadastre o seu produto</h2>
         <form action="<?= $BASE_URL ?>helpers/process_db_cadastro_produtos.php" method="POST" enctype="multipart/form-data" class="form_products">
+            <input type="hidden" name="type" value="create">
             <div class="form-group">
                 <label for="nomeproduto">Nome do Produto:</label>
                 <input type="text" class="form-control" id="nomeproduto" name="nomeproduto" required>
