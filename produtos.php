@@ -1,15 +1,14 @@
 <?php
     include_once("templates/header.php")
 
-?>  
-
-    <div class="container">
+?>
+    <div>
         <h1 class="product-title">PRODUTOS</h1>
-        <div class="row justify-content-center product-section">
-            <div class="col-2 filter">
+        <div class="row">
+            <div class="col-sm-2">
                 <h1>FILTROS</h1>
             </div>
-            <div class="col-10 products">
+            <div class="col-sm-10 products">
             <?php foreach($produtos as $produto): ?>
                 <div class="individual-products">
                     <div class="img-products">
@@ -21,5 +20,10 @@
                 </div>
             <?php endforeach ?>
             </div>
-        </div>       
+        </div>
     </div>
+
+<?php
+    include_once("templates/footer.php");
+?>
+

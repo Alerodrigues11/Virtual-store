@@ -1,8 +1,6 @@
 <?php
     include_once("templates/header.php")
-
 ?>  
-
     <div class="form_login">
         <h2>Login</h2>
         <form action="<?= $BASE_URL ?>helpers/teste_login.php" method="POST">

@@ -1,10 +1,17 @@
 /************** HEADER *************/
+.main-content {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
 
 .register {
     display: flex;
     flex-wrap: wrap;
+}
 
-    background-color: darkgrey;
+.login-register {
+    background-color: darkgray;
 }
 
 .register a {
@@ -20,6 +27,43 @@
     cursor: pointer;
 }
 
+/* Normal User */
+
+.login-user {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-email {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 6px;
+    font-size: 1.15rem;
+}
+
+.close-session {
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+    padding: 6px;
+    font-size: 1.15rem;
+}
+
+/* ADM */
+
+.login-adm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.adm {
+    text-decoration: none;
+    color: greenyellow;
+    font-weight: 600;
+    padding: 6px;
+    font-size: 1.15rem;
+}
 
 /* Navbar */
 

@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro_produtos.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/login_page.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/produtos.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/adm-page.css">
     
 </head>
 
@@ -48,6 +49,7 @@
 
     <!-- Home Page -->
     
+    <main class="main-content">
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container container__navbar">
             <div class="navbar-collapse" id="navbarNavAltMarkup">
@@ -63,10 +65,24 @@
                 </div>
 
                 <div class="register__home-page">
+                    <?php if(empty($_SESSION["Status"]) && empty($_SESSION["email"]) && empty($_SESSION["pass"])) { ?>
+                    
                     <div class="register">
-                        <a href="login.php">Login</a>
+                        <a class="login-register" href="login.php">Login</a>
                         <a href="cadastro_clientes.php">Sign up</a>
                     </div>
+
+                    <?php } else if($_SESSION["Status"] == 0) { ?>
+                        <div class="login-user">
+                            <a class="login-email" href="#"><?= $_SESSION["email"]?></a>
+                            <a class="close-session" href="<?=$BASE_URL?>sair.php">Sair</a>
+                        </div>
+                        <?php } else { ?>
+                        <div class="login-adm">
+                            <a class="adm" href="<?=$BASE_URL?>adm-page.php">Administrador</a>
+                            <a class="close-session" href="<?=$BASE_URL?>sair.php">Sair</a>
+                        </div>
+                        <?php } ?>
                 </div>
             </div>
 

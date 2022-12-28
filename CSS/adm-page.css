@@ -1,0 +1,48 @@
+.adm-section {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.adm-add, .adm-edit, .adm-delete, .adm-close {
+    width: 450px;
+    padding: 20px 0px;
+}
+
+
+.adm-add a, .adm-edit a, .adm-delete a, .adm-close a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.adm-add {
+    background-color: lightblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.adm-edit {
+    background-color: lightgreen;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.adm-delete {
+    background-color: lightcoral;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.adm-close {
+    background-color: yellow;
+    border-radius: 10px;
+    text-align: center;
+}
