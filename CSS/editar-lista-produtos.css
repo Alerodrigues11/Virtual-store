@@ -1,0 +1,21 @@
+.img-edit-products {
+    width: 100px;
+    height: 100px;
+}
+
+.table-th {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter';
+}
+
+.table-td {
+    text-align: center;
+}
+
+.table-td-text {
+    font-size: 16px;
+    font-family: 'Inter';
+    width: 500px;
+}

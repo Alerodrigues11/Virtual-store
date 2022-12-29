@@ -8,9 +8,10 @@
 
     $data = $_POST;
 
-    if(!empty($data) && !empty($_FILES) && $data["type"] === "create") 
+    if(!empty($data)) 
     {
-
+        if(!empty($_FILES) && $data["type"] === "create") 
+        {
         // first CRUD step - CREATE
         $img = $_FILES["imagemproduto"];
 
@@ -55,6 +56,9 @@
         }
 
         header("Location: ". $BASE_URL . "../index.php");
+        }
+
+        
     } else 
     
     {
@@ -72,12 +76,14 @@
 
         $stmt = $conn_clients->prepare($query);
 
-        $stmt->binParam(":id", $id).
+        $stmt->bindParam(":id", $id).
 
         $stmt->execute();
 
-        $produtos = $stmt->fetch();
+        $produto = $stmt->fetch();
     } else {
+        $produtos = [];
+
         $query = "SELECT * FROM produtos";
 
         $stmt = $conn_clients->prepare($query);
@@ -88,3 +94,5 @@
     }
 
 }
+
+$conn = null;

@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/login_page.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/produtos.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/adm-page.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/editar-lista-produtos.css">
     
 </head>
 
@@ -61,7 +62,6 @@
                     <a class="nav-link" aria-current="page" href="<?=$BASE_URL?>index.php">Home</a>
                     <a class="nav-link" href="<?=$BASE_URL?>produtos.php">Produtos</a>
                     <a class="nav-link" href="<?=$BASE_URL?>form_contato.php">Contato e Localização</a>
-                    <a class="nav-link" href="<?=$BASE_URL?>cadastro_produtos.php"">Cadastro de Produtos</a>
                 </div>
 
                 <div class="register__home-page">

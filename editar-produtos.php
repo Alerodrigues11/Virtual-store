@@ -1,14 +1,17 @@
 <?php
-    include_once("templates/header.php")
-
+    include_once("templates/header.php");
+    if(empty($_SESSION["Status"]) || $_SESSION["Status"] != 1 ) {
+        header("Location:index.php");
+    }
 ?>  
     <div class="container">
-        <h2 class="main__title--products">Cadastre o seu produto</h2>
+        <h2 class="main__title--products">Edite o seu produto</h2>
         <form action="<?= $BASE_URL ?>helpers/process_db_cadastro_produtos.php" method="POST" enctype="multipart/form-data" class="form_products">
-            <input type="hidden" name="type" value="create">
+            <input type="hidden" name="type" value="edit">
+            <input type="hidden" name="id" value="<?=$produto["id"]?>">
             <div class="form-group">
                 <label for="nomeproduto">Nome do Produto:</label>
-                <input type="text" class="form-control" id="nomeproduto" name="nomeproduto" required>
+                <input type="text" class="form-control" id="nomeproduto" name="nomeproduto" value="<?= $produto["nome"] ?>" required>
             </div>
             <div class="form-group">
                 <label for="precoproduto">Preço:</label>

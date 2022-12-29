@@ -1,6 +1,9 @@
 <?php
-    include_once("templates/header.php")
+    include_once("templates/header.php");
 
+    if(empty($_SESSION["Status"]) || $_SESSION["Status"] != 1 ) {
+        header("Location:index.php");
+    }
 ?>  
     <div class="container">
         <h2 class="main__title--products">Cadastre o seu produto</h2>
