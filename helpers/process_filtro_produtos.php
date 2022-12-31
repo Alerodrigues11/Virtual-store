@@ -8,3 +8,12 @@
     $arr->execute();
 
     $categorias = $arr->fetchAll();
+
+    $data = $_POST;
+
+    if(!empty($data))
+    {
+        $categoria = $data["categoria"];
+        header("Location: ". $BASE_URL . "../produtos.php");
+        print_r($categoria);
+    }

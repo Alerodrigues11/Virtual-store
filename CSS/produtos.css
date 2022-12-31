@@ -1,3 +1,9 @@
+/* FILTRO */
+.product-filter li {
+    list-style: none;
+}
+
+/* PRODUTOS */
 .product-title {
     text-align: center;
     font-family: 'Inter';
@@ -55,3 +61,4 @@
     font-family: 'Inter';
     color: #808080;
 }
+

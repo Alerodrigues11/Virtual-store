@@ -138,7 +138,7 @@
     
         $id;
     
-        if(!empty($_GET)) 
+        if(isset($_GET["id"])) 
         {
           $id = $_GET["id"];
         }
@@ -150,7 +150,7 @@
 
         $stmt = $conn_clients->prepare($query);
 
-        $stmt->bindParam(":id", $id).
+        $stmt->bindParam(":id", $id);
 
         $stmt->execute();
 
