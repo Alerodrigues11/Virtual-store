@@ -1,12 +1,17 @@
 <?php
-    include_once("templates/header.php")
+    include_once("templates/header.php");
+    include_once("helpers/process_filtro_produtos.php");
 
 ?>
     <div>
         <h1 class="product-title">PRODUTOS</h1>
         <div class="row">
             <div class="col-sm-2">
-                <h1>FILTROS</h1>
+                <ul>
+                    <?php foreach($categorias as $categoria): ?>
+                        <li><input type="radio"><?=$categoria["categoria"]?></li>
+                    <?php endforeach ?>  
+                </ul>
             </div>
             <div class="col-sm-10 products">
             <?php foreach($produtos as $produto): ?>

@@ -21,7 +21,12 @@
                             <td class="table-td table-td-text"scope="row"><?= $produto["nome"]?></td>
                             <td class="table-td table-td-text"scope="row"><?= $produto["preco"]?></td>
                             <td class="table-td">
-                                <a href="<?= $BASE_URL ?>editar-produtos.php?id=<?= $produto["id"]?>">EDITAR</a>
+                                <a href="<?= $BASE_URL ?>editar-produtos.php?id=<?= $produto["id"]?>">EDITAR / </a>
+                                <form action="<?= $BASE_URL ?>helpers/process_db_cadastro_produtos.php" method="POST">
+                                    <input type="hidden" name="type" value="delete">
+                                    <input type="hidden" name="id" value="<?=$produto["id"]?>">
+                                    <button type="submit">DELETAR</button>
+                                </form>
                             </td>
                         </tr>
                     <?php endforeach; ?>

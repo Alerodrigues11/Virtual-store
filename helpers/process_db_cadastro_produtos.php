@@ -54,6 +54,7 @@
             $error = $e->getMessage();
             echo "Erro: $error";
         }
+
         } else if($data["type"] === "edit")
         {
             $nomeProduto = $data["nomeproduto"];
@@ -106,6 +107,25 @@
                 $_SESSION["msg"] = "Produto atualizado com sucesso!";
     
                 
+            } catch (PDOException $e) {
+                $error = $e->getMessage();
+                echo "Erro: $error";
+            }
+        } else if($data["type"] === "delete")
+        {
+            $id = $data["id"];
+
+            $query = "DELETE FROM produtos WHERE id = :id";
+
+            $stmt = $conn_clients->prepare($query);
+
+            $stmt->bindParam(":id", $id);
+
+            try {
+
+                $stmt->execute();
+                $_SESSION["msg"] = "Produto removido com sucesso!";
+
             } catch (PDOException $e) {
                 $error = $e->getMessage();
                 echo "Erro: $error";
