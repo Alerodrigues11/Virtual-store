@@ -1,8 +1,8 @@
 <?php
 
     include_once("helpers/url.php");
-    include_once("helpers/process_db_cadastro_clientes.php");
-    include_once("helpers/process_db_cadastro_produtos.php");
+    include_once("helpers/process-db-cadastro-clientes.php");
+    include_once("helpers/process-db-cadastro-produtos.php");
 
     // limpar a mensagem
     if(isset($_SESSION["msg"])) {
@@ -29,19 +29,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
-
     <link rel="stylesheet" href="<?=$BASE_URL?>bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/body.css">
-    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/quem_somos.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/index-carousel.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/quem-somos.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/header.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/footer.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/contato.css">
-    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro_clientes.css">
-    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro_produtos.css">
-    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/login_page.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro-clientes.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro-produtos.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/produtos.css">
-    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/adm-page.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/adm-pagina.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/editar-lista-produtos.css">
     
 </head>
@@ -51,39 +49,36 @@
     <!-- Home Page -->
     
     <main class="main-content">
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container container__navbar">
-            <div class="navbar-collapse" id="navbarNavAltMarkup">
-                <div>
-                    <img src="#" alt="#">
-                </div>
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-dark header">
+                    <a class="navbar-brand" href="#"><img class="logo" src="<?=$BASE_URL?>img-logo/logo.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbar-links">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-item nav-link" id="navbar-links" aria-current="page" href="<?=$BASE_URL?>index.php">HOME</a>
+                            <a class="nav-item nav-link" id="navbar-links" href="<?=$BASE_URL?>produtos.php">PRODUTOS</a>
+                            <a class="nav-item nav-link" id="navbar-links" href="<?=$BASE_URL?>form-contato.php">CONTATO E LOCALIZAÇÃO</a>
+                        </div>
+                        <?php if(empty($_SESSION["Status"]) && empty($_SESSION["email"]) && empty($_SESSION["pass"])) { ?>
+            
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-item nav-link header__login" href="login.php">LOGIN</a>
+                            <a class="nav-item nav-link header__register" href="cadastro-clientes.php">SING UP</a>
+                        </div>
 
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="<?=$BASE_URL?>index.php">Home</a>
-                    <a class="nav-link" href="<?=$BASE_URL?>produtos.php">Produtos</a>
-                    <a class="nav-link" href="<?=$BASE_URL?>form_contato.php">Contato e Localização</a>
-                </div>
-
-                <div class="register__home-page">
-                    <?php if(empty($_SESSION["Status"]) && empty($_SESSION["email"]) && empty($_SESSION["pass"])) { ?>
-                    
-                    <div class="register">
-                        <a class="login-register" href="login.php">Login</a>
-                        <a href="cadastro_clientes.php">Sign up</a>
+                        <?php } else if($_SESSION["Status"] == 0) { ?>
+                            <div class="navbar-nav ms-auto">
+                                <a class="nav-item nav-link" href="#"><?= $_SESSION["email"]?></a>
+                                <a class="nav-item nav-link header__close" href="<?=$BASE_URL?>sair.php">Sair</a>
+                            </div>
+                            <?php } else { ?>
+                            <div class="navbar-nav ms-auto">
+                                <a class="nav-item nav-link header__adm" href="<?=$BASE_URL?>adm-pagina.php">Administrador</a>
+                                <a class="nav-item nav-link header__close" href="<?=$BASE_URL?>sair.php">Sair</a>
+                            </div>
+                            <?php } ?>
                     </div>
-
-                    <?php } else if($_SESSION["Status"] == 0) { ?>
-                        <div class="login-user">
-                            <a class="login-email" href="#"><?= $_SESSION["email"]?></a>
-                            <a class="close-session" href="<?=$BASE_URL?>sair.php">Sair</a>
-                        </div>
-                        <?php } else { ?>
-                        <div class="login-adm">
-                            <a class="adm" href="<?=$BASE_URL?>adm-page.php">Administrador</a>
-                            <a class="close-session" href="<?=$BASE_URL?>sair.php">Sair</a>
-                        </div>
-                        <?php } ?>
-                </div>
-            </div>
-
-    </nav>
+            </nav>
+        </header>

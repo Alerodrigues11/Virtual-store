@@ -7,7 +7,7 @@
 
     if(!empty($try["email"]) && !empty($try["pass"])) 
     {
-        include_once("conn_banco_de_dados.php");
+        include_once("conn-banco-de-dados.php");
         
         $email = $try["email"];
         $pass = $try["pass"];

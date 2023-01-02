@@ -1,0 +1,31 @@
+#myCarousel {
+    width: 70%;
+}
+
+.carousel-item {
+    height: calc(85.8vh - 13vh);
+    background: #777;
+    color: white;
+    position: relative;
+}
+
+.carousel__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.overlay-image {
+    height: calc(85.8vh - 13vh);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+
+}

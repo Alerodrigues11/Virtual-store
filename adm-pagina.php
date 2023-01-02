@@ -10,7 +10,7 @@
     <div class="container-fluid adm-section">
         <h1>Area Administrativa</h1>
         <div class="adm-add">
-            <a href="<?=$BASE_URL?>cadastro_produtos.php">Adicionar Produto</a>
+            <a href="<?=$BASE_URL?>cadastro-produtos.php">Adicionar Produto</a>
         </div>
         <div class="adm-edit">
             <a href="<?=$BASE_URL?>editar-lista-produtos.php">Alterar Produto</a>

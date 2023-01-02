@@ -7,7 +7,7 @@
 ?>  
     <div class="container">
         <h2 class="main__title--products">Edite o seu produto</h2>
-        <form action="<?= $BASE_URL ?>helpers/process_db_cadastro_produtos.php" method="POST" enctype="multipart/form-data" class="form_products">
+        <form action="<?= $BASE_URL ?>helpers/process-db-cadastro-produtos.php" method="POST" enctype="multipart/form-data" class="form_products">
             <input type="hidden" name="type" value="edit">
             <input type="hidden" name="id" value="<?=$produto["id"]?>">
             <div class="form-group">

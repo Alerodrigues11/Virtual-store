@@ -3,7 +3,7 @@
     session_start();
 
     include_once("url.php");
-    include_once("conn_banco_de_dados.php");
+    include_once("conn-banco-de-dados.php");
     //$_FILE["imagemproduto"]
 
     $data = $_POST;

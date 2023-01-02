@@ -4,7 +4,7 @@
 ?>  
     <div class="container">
         <h2 class="main__title--clients">Sing Up</h2>
-        <form action="<?= $BASE_URL ?>helpers/process_db_cadastro_clientes.php" class="form_clients" method="POST">
+        <form action="<?= $BASE_URL ?>helpers/process-db-cadastro-clientes.php" class="form_clients" method="POST">
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o seu nome" required>

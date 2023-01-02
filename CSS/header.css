@@ -1,84 +1,41 @@
-/************** HEADER *************/
-.main-content {
-    flex: 1;
-    margin: 0;
+/* Header */
+
+.container-fluid {
     padding: 0;
+    margin: 0;
 }
 
-.register {
-    display: flex;
-    flex-wrap: wrap;
+.header {
+    padding: 15px 0;
 }
 
-.login-register {
-    background-color: darkgray;
+.logo {
+    width: 75px;
+    margin-left: 2rem;
 }
 
-.register a {
-    text-decoration: none;
-    color: white;
+#navbar-links {
+    color: #FFF;
+    padding: 0 25px;
     font-weight: 600;
-    padding: 6px;
-    font-size: 1.15rem;
 }
 
-.register a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* Normal User */
-
-.login-user {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.login-email {
-    text-decoration: none;
-    color: white;
+.header__login {
     font-weight: 600;
-    padding: 6px;
-    font-size: 1.15rem;
+    color: #fff;
+    border: 2px solid #b6350e;
+    background-color: #b6350e;
+    border-radius: 5px;
 }
 
-.close-session {
-    text-decoration: none;
-    color: red;
+.header__register {
     font-weight: 600;
-    padding: 6px;
-    font-size: 1.15rem;
+    color: #fff;
 }
 
-/* ADM */
+/* BUTTON TOGGLE */
 
-.login-adm {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.adm {
-    text-decoration: none;
-    color: greenyellow;
-    font-weight: 600;
-    padding: 6px;
-    font-size: 1.15rem;
-}
-
-/* Navbar */
-
-.container__navbar {
-    max-width: 100%;
-}
-
-.navbar-collapse {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.navbar-nav a {
-    font-weight: 600;
-    font-size: 20px;       
-    margin: 0 15px;
-    color: #E0EEEE;
+.navbar-toggler {
+    background-color: #b6350e;
+    margin-right: 15px;
 }

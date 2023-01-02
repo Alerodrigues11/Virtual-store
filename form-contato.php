@@ -11,7 +11,7 @@
             </div>
             <div class="col">
                 <h2>Nos Contate!</h2>
-                <form action="<?= $BASE_URL ?>helpers/envio_email.php" method="POST">
+                <form action="<?= $BASE_URL ?>helpers/envio-email.php" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome Completo</label>
                         <input type="text" class="form-control" name="nome" required>

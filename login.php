@@ -3,7 +3,7 @@
 ?>  
     <div class="form_login">
         <h2>Login</h2>
-        <form action="<?= $BASE_URL ?>helpers/teste_login.php" method="POST">
+        <form action="<?= $BASE_URL ?>helpers/teste-login.php" method="POST">
             <div class="form-group">
                 <input type="text" class="form-control form-control-lg" name="email" placeholder="Email">
             </div>
