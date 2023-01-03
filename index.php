@@ -3,52 +3,39 @@
     include_once("helpers/conn-banco-de-dados.php");
 
     $busca = "SELECT * FROM produtos ORDER BY id DESC LIMIT 4";
-    $conexao = $conn_clients->prepare($query);
+    $conexao = $conn_clients->prepare($busca);
     $conexao->execute();
     $arrCarousel = $conexao->fetchAll();
 
 ?>
-    <section>
+    <section class="main__carousel">
+        <h1 class="main__carousel--title">NOSSOS PRINCIPAIS PRODUTOS</h1>
     <?php if(count($arrCarousel) > 0) { ?>
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <?php $active = "active"; ?>
-                <?php $y = 0; ?>
+        <div class="row mt-3">
+            <div class="owl-carousel owl-theme">
                 <?php foreach($arrCarousel as $row): ?>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="<?= $y ?>" class="<?= $active ?>" aria-label="Slide <?= $y++ ?>"></li>
-                    <?php $active = ""; ?>
-                <?php endforeach ?>
-
-            </ol>
-            <div class="carousel-inner">
-
-                <?php $active = "active"; ?>
-                <?php foreach($arrCarousel as $row): ?>
-                    <div class="carousel-item <?= $active ?>">
-                        <div>
-                            <img class="overlay-image" src="<?= $BASE_URL?>/upload/<?= $row["imagem"]?>" alt="#">
-                        </div>
-                        <div class="container carousel__description">
-                            <h1>EXAMPLE HEADLINE</h1>
-                            <p>2</p>
-                            <a href="#" class="btn btn-lg btn-primary">BUY NOW</a>
+                <div class="item mb-4">
+                    <div class="card border-1 shadow">
+                        <img src="<?= $BASE_URL?>/upload/<?= $row["imagem"]?>" alt="#" class="card-img-top img__main">
+                        <div class="card-body">
+                            <h4><?= $row["nome"]?></h4>
+                            <p>R$ <?= $row["preco"]?></p>
+                            <button class="btn btn-outline-success">Compre Agora</button>
                         </div>
                     </div>
-                    <?php $active = ""; ?>
-                    <?php endforeach ?>
+                </div>
+                <?php endforeach ?>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
 
         <?php } ?>
+    </section>
 
+    <section>
+        <h1>QUEM SOMOS</h1>
+        <h2>Missão</h2>
+        <h2>Visão</h2>
+        <h2>Valores</h2>
     </section>
 
 <?php
