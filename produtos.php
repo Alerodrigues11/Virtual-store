@@ -9,10 +9,9 @@
     $categorias = $arr->fetchAll();
 
 ?>
-    <div>
-        <h1 class="product-title">PRODUTOS</h1>
+    <div class="products__section">
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-sm-2 filter">
                 <ul class="product-filter">
                     <?php if(isset($categorias)): ?>
                     <li><a href="<?= $BASE_URL?>produtos.php">Todos</a></li>

@@ -8,6 +8,7 @@
     $arrCarousel = $conexao->fetchAll();
 
 ?>
+    <div class="main__page--section">
     <section class="main__carousel">
         <h1 class="main__carousel--title">NOSSOS PRINCIPAIS PRODUTOS</h1>
     <?php if(count($arrCarousel) > 0) { ?>
@@ -31,12 +32,26 @@
         <?php } ?>
     </section>
 
-    <section>
-        <h1>QUEM SOMOS</h1>
-        <h2>Missão</h2>
-        <h2>Visão</h2>
-        <h2>Valores</h2>
+    <section class="about__section">
+        <div class="about">
+            <h1>QUEM SOMOS</h1>
+            <div class="about__general">
+                <div>
+                    <h2>Missão</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!</p>
+                </div>
+                <div class="about__vision">
+                    <h2>Visão</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!</p>
+                </div>
+                <div>
+                    <h2>Valores</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!</p>
+                </div>
+            </div>
+        </div>
     </section>
+    </div>
 
 <?php
     include_once("templates/footer.php");

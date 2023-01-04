@@ -1,31 +1,44 @@
+.contact__section {
+    margin-bottom: 40px;
+}
+
+.contact__section--title {
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+/* MAPS */
+
+.maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /***** forms *****/
 
-.forms__contact {
-    max-width: 450px;
-}
-
-.forms__contact label {
-    font-weight: 600;
-    font-family: 'Inter';
-
-}
-
-.contact__button {
+.contact {
     display: flex;
-    justify-content: center;
-
-    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
-.contact__button--details {
-    border: 2px solid transparent;
-    border-radius: 100px 100px 100px 100px;
-    padding: 10px 55px;
+.forms__contact {
+    width: 650px;
+}
 
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
     font-weight: 600;
     font-family: 'Inter';
+    font-size: 18px;
 }
 
-.mapa-conteudo {
-    width: 350px;
+.contact__btn {
+    margin-top: 10px;
 }

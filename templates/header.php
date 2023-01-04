@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/quem-somos.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/header.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/footer.css">
+    <link rel="stylesheet" href="<?=$BASE_URL?>CSS/login.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/contato.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro-clientes.css">
     <link rel="stylesheet" href="<?=$BASE_URL?>CSS/cadastro-produtos.css">
@@ -50,9 +51,7 @@
 
 <body>
 
-    <!-- Home Page -->
-    
-    <main class="main-content">
+    <!-- Header-->
         <header class="container-fluid">
             <nav class="navbar navbar-expand-lg bg-dark header">
                     <a class="navbar-brand" href="#"><img class="logo" src="<?=$BASE_URL?>img-logo/logo.png" alt="Logo"></a>

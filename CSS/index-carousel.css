@@ -1,10 +1,14 @@
 .main__carousel--title {
     font-weight: 600;
     text-align: center;
-    margin-top: 15px;
+    margin: 35px 0;
 }
 
 /* Main Carousel */
+
+.main__carousel {
+    margin: 25px 0;
+}
 
 .img__main {
     height: 500px;
@@ -30,3 +34,58 @@
 .card-body button {
     transition: 0.3s;
 }
+
+
+/* ABOUT */
+
+.about__section {
+    margin-bottom: 100px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.about h1 {
+    font-weight: 600;
+}
+
+.about__general {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.about__general div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 350px;
+    height: 300px;
+    margin-top: 25px;
+
+    background-color: #282b2e;
+    border: 3px solid #282b2e;
+    border-radius: 15px;
+}
+
+.about__vision {
+    margin-right: 4.5em;
+    margin-left: 4.5em;
+}
+
+.about__general div h2 {
+    color: #b6350e;
+    font-weight: 600;
+}
+
+.about__general div p {
+    color: #FFF;
+    text-align: center;
+} 
