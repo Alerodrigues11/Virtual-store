@@ -7,21 +7,14 @@
     }
 ?>
 
-    <div class="container-fluid adm-section">
-        <h1>Area Administrativa</h1>
-        <div class="adm-add">
+    <div class="container-fluid adm__section">
+        <h1>Área Administrativa</h1>
+        <div class="adm__section--add">
             <a href="<?=$BASE_URL?>cadastro-produtos.php">Adicionar Produto</a>
         </div>
-        <div class="adm-edit">
-            <a href="<?=$BASE_URL?>editar-lista-produtos.php">Alterar Produto</a>
+        <div class="adm__section--edit">
+            <a href="<?=$BASE_URL?>editar-lista-produtos.php">Editar / Excluir Produto</a>
         </div>
-        <div class="adm-delete">
-            <a href="">Excluir Produto</a>
-        </div>
-        <div class="adm-close">
-            <a href="">Sair da Área Administrativa</a>
-        </div>
-
     </div>
 
 <?php

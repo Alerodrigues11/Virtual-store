@@ -67,8 +67,8 @@
                         <?php if(empty($_SESSION["Status"]) && empty($_SESSION["email"]) && empty($_SESSION["pass"])) { ?>
             
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-item nav-link header__login" href="login.php">LOGIN</a>
-                            <a class="nav-item nav-link header__register" href="cadastro-clientes.php">SING UP</a>
+                            <a class="nav-item nav-link header__login" href="<?=$BASE_URL?>login.php">LOGIN</a>
+                            <a class="nav-item nav-link header__register" href="<?=$BASE_URL?>cadastro-clientes.php">SING UP</a>
                         </div>
 
                         <?php } else if($_SESSION["Status"] == 0) { ?>

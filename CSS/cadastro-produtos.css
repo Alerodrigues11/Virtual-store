@@ -1,12 +1,43 @@
-.main__title--products {
-    text-align: center;
-    margin-top: 2rem;
+.register__products--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 682px;
 }
 
-.form_products {
-    max-width: 500px;
-    margin: 2rem auto;
+.main__title--products {
+    margin-bottom: 2rem;
 }
+
+.form__products  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.form__products--name, .form__products--price, .form__products--available, .form__products--description, .form__products--img {
+    width: 500px;
+}
+
+.form__products--button {
+    font-weight: 600;
+    color: #FFF;
+    transition: 0.5s;
+
+    height: 3rem;
+}
+
+.form__products--button:hover {
+    background-color: #157c0c;
+    cursor: pointer;
+}
+
+
+/* The msg below is due to some kind of error during the registration process */
 
 .msg {
     color: #155724;
