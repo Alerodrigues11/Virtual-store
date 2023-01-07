@@ -1,9 +1,11 @@
 <?php
 
-    $host = "localhost";
-    $dbname = "ludostore";
-    $user = "root";
-    $pass = "";
+    $env = parse_ini_file('.env');
+
+    $host = $env['DB_HOST'];
+    $dbname = $env['DB'];
+    $user = $env['DB_USERNAME'];
+    $pass = $env['DB_PASSWORD'];
 
     try {
 
