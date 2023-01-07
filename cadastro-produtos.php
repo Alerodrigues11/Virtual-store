@@ -13,6 +13,10 @@
                 <label for="nomeproduto">Nome do Produto</label>
                 <input type="text" class="form-control" id="nomeproduto" name="nomeproduto" required>
             </div>
+            <div class="form-group form__products--category">
+                <label for="categoriaproduto">Categoria</label>
+                <input type="text" class="form-control" id="categoria" name="categoria" required>
+            </div>
             <div class="form-group form__products--price">
                 <label for="precoproduto">Preço</label>
                 <input type="text" class="form-control" id="precoproduto" name="precoproduto" required>
@@ -32,6 +36,3 @@
                 <button type="submit" class="w-100 btn btn-success form__products--button">Cadastrar</button>
         </form>
     </div>
-<?php
-    include_once("templates/footer.php")
-?>

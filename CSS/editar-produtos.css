@@ -1,0 +1,39 @@
+.e-page-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    height: 682px;
+}
+
+.e-page-products h2 {
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+
+.e-page-products__content {
+    width: 30%;
+}
+
+.e-page-products__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.e-page-products__btn {
+    font-weight: 600;
+    color: #FFF;
+    transition: 0.5s;
+
+    height: 3rem;
+}
+
+.e-page-products__btn:hover {
+    background-color: #157c0c;
+    cursor: pointer;
+}

@@ -17,10 +17,10 @@
                 <?php foreach($arrCarousel as $row): ?>
                 <div class="item mb-4">
                     <div class="card border-1 shadow">
-                        <img src="<?= $BASE_URL?>/upload/<?= $row["imagem"]?>" alt="#" class="card-img-top img__main">
+                        <img src="<?=$BASE_URL?>/upload/<?=$row["imagem"]?>" alt="#" class="card-img-top img__main">
                         <div class="card-body">
-                            <h4><?= $row["nome"]?></h4>
-                            <p>R$ <?= $row["preco"]?></p>
+                            <h4><?=$row["nome"]?></h4>
+                            <p>R$ <?=$row["preco"]?></p>
                             <button class="btn btn-outline-success">Compre Agora</button>
                         </div>
                     </div>
@@ -38,15 +38,15 @@
             <div class="about__general">
                 <div>
                     <h2>Missão</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!</p>
                 </div>
                 <div class="about__vision">
                     <h2>Visão</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!</p>
                 </div>
                 <div>
                     <h2>Valores</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eligendi minima officia totam corporis, at reprehenderit odit vel atque a corrupti. Repellendus rerum, perferendis soluta commodi eos rem harum quia!</p>
                 </div>
             </div>
         </div>

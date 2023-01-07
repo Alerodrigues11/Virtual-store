@@ -8,6 +8,10 @@
     height: 682px;
 }
 
+.adm__section h1 {
+    margin-bottom: 20px;
+}
+
 
 .adm__section--add, .adm__section--edit {
     width: 450px;

@@ -16,6 +16,7 @@
         $img = $_FILES["imagemproduto"];
 
         $nomeProduto = $data["nomeproduto"];
+        $categoria = $data["categoria"];
         $precoProduto = $data["precoproduto"];
         $estoque = $data["estoque"];
         $descricaoProduto = $data["descricaoproduto"];
@@ -34,7 +35,7 @@
 
         move_uploaded_file($img["tmp_name"], $diretorio.$imagemNovoNome);
 
-        $query = "INSERT INTO produtos (nome, preco, estoque, descricao, imagem) VALUES (:nome, :preco, :estoque, :descricao, :imagem)";
+        $query = "INSERT INTO produtos (nome, preco, estoque, descricao, imagem, categoria) VALUES (:nome, :preco, :estoque, :descricao, :imagem, :categoria)";
 
         $stmt = $conn_clients->prepare($query);
 
@@ -43,6 +44,7 @@
         $stmt->bindParam(":estoque", $estoque);
         $stmt->bindParam(":descricao", $descricaoProduto);
         $stmt->bindParam(":imagem", $imagemNovoNome);
+        $stmt->bindParam(":categoria", $categoria);
 
         try {
 
@@ -58,6 +60,7 @@
         } else if($data["type"] === "edit")
         {
             $nomeProduto = $data["nomeproduto"];
+            $categoria = $data["categoria"];
             $precoProduto = $data["precoproduto"];
             $estoque = $data["estoque"];
             $descricaoProduto = $data["descricaoproduto"];
@@ -91,7 +94,7 @@
                 move_uploaded_file($img["tmp_name"], $diretorio.$imagemNome);
             }
     
-            $query = "UPDATE produtos SET nome = :nomeProduto, preco = :precoProduto, estoque = :estoque, descricao = :descricaoProduto, imagem = :imagemNome WHERE id = :id";
+            $query = "UPDATE produtos SET nome = :nomeProduto, preco = :precoProduto, estoque = :estoque, descricao = :descricaoProduto, imagem = :imagemNome, categoria = :categoria WHERE id = :id";
     
             $stmt = $conn_clients->prepare($query);
             
@@ -100,6 +103,7 @@
             $stmt->bindParam(":estoque", $estoque);
             $stmt->bindParam(":descricaoProduto", $descricaoProduto);
             $stmt->bindParam(":imagemNome", $imagemNome);
+            $stmt->bindParam(":categoria", $categoria);
             $stmt->bindParam(":id", $id);
     
             try {

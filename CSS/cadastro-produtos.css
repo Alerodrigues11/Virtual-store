@@ -19,7 +19,7 @@
     gap: 5px
 }
 
-.form__products--name, .form__products--price, .form__products--available, .form__products--description, .form__products--img {
+.form__products--name, .form__products--price, .form__products--available, .form__products--description, .form__products--img, .form__products--category {
     width: 500px;
 }
 

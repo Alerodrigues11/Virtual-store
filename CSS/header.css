@@ -5,32 +5,68 @@
     margin: 0;
 }
 
-.header {
-    padding: 15px 0;
+.navbar-brand {
+    font-size: 20px;
 }
 
-.logo {
-    width: 75px;
-    margin-left: 2rem;
+.header__content {
+    padding: 35px 0;
 }
 
-#navbar-links {
+.header__nav-item {
     color: #FFF;
     padding: 0 25px;
     font-weight: 600;
+    font-size: 20px;
+
+    margin: 0 10px;
 }
 
+.navbar-brand {
+    margin-left: 35px;
+    color: #d44115;
+}
+
+/* login */
+
 .header__login {
+    width: 215px;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__login a {
+    font-size: 18px;
+}
+
+.header__login__btn, .header__login__close {
     font-weight: 600;
-    color: #fff;
-    border: 2px solid #b6350e;
+    color: #FFF;
+    padding: 8px;
+    border: 1px solid #b6350e;
     background-color: #b6350e;
     border-radius: 5px;
 }
 
-.header__register {
+.header__register__btn {
     font-weight: 600;
-    color: #fff;
+    color: #FFF;
+}
+
+/* User */
+
+.header__login__user {
+    font-weight: 600;
+    color: #FFF;
+}
+
+/* Adm */
+
+.header__login__adm {
+    font-weight: 600;
+    color: #b840f0;
+
 }
 
 /* BUTTON TOGGLE */
