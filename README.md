@@ -10,7 +10,7 @@ Etapas desenvolvidas:
 - Opção de deletar os produtos adicionados;
 - Filtro por categoria na página "Produtos".
 
-EN-US VERSION
+EN VERSION
 
 Creation of a SITE in PHP using CRUD.
 Developed steps:
